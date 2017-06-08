@@ -4,13 +4,11 @@ import PostList from './PostList'
 import Header from './Header'
 import NewPost from './NewPost'
 import {BrowserRouter as Router,Route} from 'react-router-dom'
-// import {Provider} from 'react-redux'
-// import store from './redux/store'
+
 class App extends Component {
   render() {
 
     return (
-      // <Provider store={store}>
         <Router>
           <div className="app">
             <Header/>
@@ -18,7 +16,6 @@ class App extends Component {
             <Route path='/post/:id' component={NewPost} />
           </div>
         </Router>
-      // </Provider>
     )
   }
 }

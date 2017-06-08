@@ -34,7 +34,5 @@ class PostList extends Component{
     )
   }
 }
-const mapStateToProps = (state) =>({
-  posts:state.posts
-})
+
 export default PostList
