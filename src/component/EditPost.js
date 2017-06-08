@@ -20,10 +20,7 @@ class EditPost extends Component {
 
   publishPost(data) {
     axios.put(`http://express-api.haoqicat.com/post/${this.props.match.params.id}`, data)
-    .then(res => {
-      console.log(res.data.message);
-      this.props.history.push('/');
-    })
+    .then(res => this.props.history.push('/'))
   }
 
   render() {

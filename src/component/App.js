@@ -9,11 +9,8 @@ import ShowPost from './ShowPost'
 
 class App extends Component {
   render() {
-
     return (
-
         <Router>
-
             <div className="app">
               <Header/>
               <Switch>
@@ -23,7 +20,6 @@ class App extends Component {
                 <Route path='/post/:id' component={ShowPost} />
               </Switch>
             </div>
-
         </Router>
     )
   }
